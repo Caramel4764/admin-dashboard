@@ -3,8 +3,11 @@
 }
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: rgb(226, 226, 226);
+  font-family: nunito, sans-serif;
+  background-color: rgb(241, 235, 235);
+}
+h4 {
+  margin: 0px;
 }
 p {
   font-size: 16px;
@@ -14,7 +17,7 @@ h2 {
 }
 .grid {
   display:grid;
-  grid-template-columns: minmax(170px,2fr) 9fr;
+  grid-template-columns: 180px 9fr;
 }
 
 ul{
@@ -33,21 +36,25 @@ ul{
   color:rgb(255, 215, 215)
 }
 .dashboard {
+  height: max(100vh, 100%);
   background-color: rgb(232, 95, 95);
   color: rgb(255, 255, 255);
   display: flex;
+  box-shadow: 2px 0px 10px rgb(239, 208, 208);
   flex-direction: column;
   padding: 0px 6px;
   align-items: center;
 }
-.dashboard-ul {
-
+.card h4 {
+  margin-top: 10px;
+}
+.card p {
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+  margin: 0;
 }
 .logoName h2{
   margin-left: 10px;
-}
-.logoName {
-  
 }
 .logoName div {
   display: flex;
@@ -60,12 +67,15 @@ ul{
 }
 .pfp {
   border-radius: 50%;
+  border-color:#E84a5f;
+  border-style:solid;
 }
 .small-pfp {
   width: 30px;
 }
 .big-pfp {
   width: 50px;
+  border-width: 3px;
 }
 #setting-div {
   margin-top: 30px;
@@ -77,10 +87,14 @@ ul{
   margin: 0px 20px;
 }
 #search-bar {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(231, 231, 231);
+  margin-left: 10px;
   border: none;
-  height: 20px;
+  height: 21px;
+  width: min(550px, 70%);
   border-radius: 10px;
+}
+.search-div {
   flex-grow: 1;
 }
 .welcome {
@@ -111,11 +125,12 @@ ul{
 }
 .heading {
   background-color: white;
+  padding: 10px 20px 20px 20px;
+  box-shadow: 0px 2px 10px rgb(239, 208, 208);
 }
 .welcome-button-list {
-  gap: 15px;
+  gap: 25px;
   display:flex;
-
 }
 .welcome-button {
   background-color: rgb(232, 95, 95);
@@ -124,13 +139,75 @@ ul{
   border: none;
   padding: 10px 20px;
 }
-
-.project-container {
-  padding-left: 15px;
+.welcome-button:hover {
+  background-color: rgb(242, 111, 111);
+}
+.main-info-container {
+  padding: 20px 15px 40px 15px;
+  display: grid;
+  margin: 0px 30px;
+  gap: 25px;
+  grid-template-columns: 1fr 250px;
 }
 .card {
   background-color: white;
-  padding:20px;
+  padding:5px 20px;
   border-radius: 10px;
-  border-left: 10px rgb(248, 193, 54) solid
+  border-left: 10px rgb(248, 193, 54) solid;
+  box-shadow: 0px 0px 5px rgb(239, 208, 208);
+}
+.cardDiv {
+  display:grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+}
+.action-icon {
+  display:flex;
+  gap: 20px;
+  justify-content: end;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.announcement-ul {
+  background-color: white;
+  border-radius: 7px;
+  padding: 25px;
+}
+.announcement-div p {
+  color: rgb(102, 102, 102);
+  margin: 0px;
+  font-size: 13px;
+}
+.trending-pfp {
+  width: 50px;
+  height: 50px;
+}
+.trending-ul {
+  grid-row-gap: 15px;
+  display: grid; 
+  background-color: white;
+  border-radius: 7px;
+  padding: 25px;
+}
+.trending-single-div {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 1fr;
+}
+.trending-name {
+}
+.trending-name p{
+  margin: 0;
+  font-size: 12px;
+
+}
+.profile-gap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bold {
+  font-weight: 800;
 }
