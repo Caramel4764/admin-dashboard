@@ -1,0 +1,136 @@
+:root {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(226, 226, 226);
+}
+p {
+  font-size: 16px;
+}
+h2 {
+  font-size: 20px;
+}
+.grid {
+  display:grid;
+  grid-template-columns: minmax(170px,2fr) 9fr;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.dashboard ul div {
+  display: flex;
+}
+.dashboard ul div a{
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+.dashboard ul div a:hover{
+  color:rgb(255, 215, 215)
+}
+.dashboard {
+  background-color: rgb(232, 95, 95);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 6px;
+  align-items: center;
+}
+.dashboard-ul {
+
+}
+.logoName h2{
+  margin-left: 10px;
+}
+.logoName {
+  
+}
+.logoName div {
+  display: flex;
+  align-items: center;
+}
+.dashboard-ul {
+  display:flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pfp {
+  border-radius: 50%;
+}
+.small-pfp {
+  width: 30px;
+}
+.big-pfp {
+  width: 50px;
+}
+#setting-div {
+  margin-top: 30px;
+}
+.search-flex {
+  display:flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0px 20px;
+}
+#search-bar {
+  background-color: rgb(225, 225, 225);
+  border: none;
+  height: 20px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.welcome {
+  display:flex;
+  align-items: center;
+}
+#userInfo {
+  display:flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+#userInfo p{
+  margin:0;
+  margin-bottom: 4px;
+  font-size: 11px;
+  padding:0;
+  font-weight: 600;
+}
+#userInfo h4{
+  margin:0;
+  padding: 0;
+  font-size: 18px;
+}
+.welcome-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.heading {
+  background-color: white;
+}
+.welcome-button-list {
+  gap: 15px;
+  display:flex;
+
+}
+.welcome-button {
+  background-color: rgb(232, 95, 95);
+  border-radius: 25px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+.project-container {
+  padding-left: 15px;
+}
+.card {
+  background-color: white;
+  padding:20px;
+  border-radius: 10px;
+  border-left: 10px rgb(248, 193, 54) solid
+}
